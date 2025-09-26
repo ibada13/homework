@@ -51,7 +51,7 @@ export default function WhoAreWe() {
           start: "top 90%",
           end:"-30% 30%",
           // toggleActions: "play reverse play reverse",
-          markers: true, 
+          // markers: true, 
           scrub: true ,
         },
       } )
