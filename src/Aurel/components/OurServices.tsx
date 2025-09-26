@@ -27,7 +27,7 @@ export default function OurServices() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-bg via-black to-bg w-full flex flex-col justify-between md:flex-row items-center px-12 gap-12 ">
+    <div className="min-h-screen bg-gradient-to-br from-bg via-black to-bg w-full flex flex-col justify-between md:flex-row items-center px-12 pt-22 gap-12 ">
      
       <div  className="flex flex-col gap-6 max-w-lg flex-1">
                 <p className="text-secondary text-lg md:text-xl opacity-80 text-left">

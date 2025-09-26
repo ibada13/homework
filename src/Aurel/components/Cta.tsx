@@ -3,8 +3,8 @@ export default function Cta() {
 
 
     return (
-        <section className="h-[70vh] bg-gradient-to-bl  from-bg from-20% via-black to-bg w-full flex flex-col items-center  justify-around p-6">
-            <p className="text-sfg uppercase font-semibold text-4xl">Claim Your Free Session</p>
+        <section className="min-h-[80vh] bg-gradient-to-bl  from-bg from-20% via-black to-bg w-full flex flex-col items-center  justify-around p-6 ">
+            <p className="text-sfg uppercase font-semibold text-4xl text-center">Claim Your Free Session</p>
 <p className="text-gray-400">
   We help you{' '}
   <span className="text-ssfg">launch</span>,{' '}
