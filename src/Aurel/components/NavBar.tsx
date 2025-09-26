@@ -14,7 +14,7 @@ export default function NavBar() {
   const linkClass = (isActive: boolean) =>
     isActive
       ? "text-sfg uppercase font-semibold"
-      : "hover:text-sfg hover:border-b-2 hover:border-sfg transition-all duration-300";
+      : "hover:text-sfg  transition-all duration-200";
 
   return (
     <nav

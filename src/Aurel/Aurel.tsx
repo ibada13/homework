@@ -5,8 +5,14 @@ import WhoAreWe from "./components/WhoAreWe";
 import OurServices from "./components/OurServices";
 import Cta from "./components/Cta";
 import Footer from "./components/Footer";
-export default function Aurel() { 
+import { useEffect } from "react";
 
+
+
+export default function Aurel() { 
+    useEffect(() => { 
+        document.title = "Aurel";
+    },[])
 
 
 
