@@ -34,7 +34,7 @@ gsap.registerPlugin(ScrollTrigger);
 const FirstSection = () => { 
   return (
     <div className="flex flex-col items-center justify-around z-10">
-      <img loading="lazy" src={logo} alt="" className="w-80 md:w-130"/>
+      <img loading="lazy" src={logo} alt="" className="w-80 md:w-130 "/>
       
       <p className="text-xl"></p>
     </div>
