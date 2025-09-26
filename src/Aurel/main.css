@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@import "@fontsource-variable/montserrat";
+@import "@fontsource-variable/cairo";
+
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-secondary: var(--secondary);
+  --color-fg: var(--fg);
+  --color-sfg: var(--sfg);
+  --color-ssfg: var(--ssfg);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-highlight: var(--highlight);
+}
+
+:root {
+  --bg: oklch(0.2678 0.0971 325.23);
+  --secondary: 		oklch(0.8952 0.0381 309.57);
+  --fg: oklch(0.34 0.17 328.9);
+  --sfg :oklch(0.8714 0.1751 92.61) ;
+  --ssfg:#FAFA33 ; 
+  --accent: oklch(0.68 0.12 253.21);
+  --accent-hover: oklch(0.62 0.14 253.21);
+  --muted: oklch(0.88 0.005 270);
+  --border: oklch(0.78 0.005 270);
+  --highlight: oklch(0.93 0.03 253.21);
+}
+
+[data-theme='dark'] {
+  --bg: #070606;
+--secondary: oklch(0.25 0.015 270);
+  --fg: oklch(0.94 0.005 270);
+  --accent: oklch(0.652 0.1901 253.21);
+  --accent-hover: oklch(0.72 0.20 253.21);
+  --muted: oklch(0.45 0.005 270);
+  --border: oklch(0.35 0.005 270);
+  --highlight: oklch(0.56 0.04 253.21);
+}
+
+body{
+  font-family: 'Montserrat',sans-serif;
+  /* font-family: 'Cairo',sans-serif; */
+}
+[dir="rtl"] #logo{
+  font-family: "Aref Ruqaa";
+}
+[dir="ltr"] #logo {
+  font-family: "Dancing Script";
+} 
+
+
+.anim {
+  transition-property: all;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1 );
+  transition-duration:400ms;
+}
