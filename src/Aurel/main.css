@@ -36,7 +36,7 @@
   --highlight: oklch(0.93 0.03 253.21);
 }
 
-[data-theme='dark'] {
+/* [data-theme='dark'] {
   --bg: #070606;
 --secondary: oklch(0.25 0.015 270);
   --fg: oklch(0.94 0.005 270);
@@ -45,7 +45,7 @@
   --muted: oklch(0.45 0.005 270);
   --border: oklch(0.35 0.005 270);
   --highlight: oklch(0.56 0.04 253.21);
-}
+} */
 
 body{
   font-family: 'Montserrat',sans-serif;
