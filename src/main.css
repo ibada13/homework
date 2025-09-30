@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "@fontsource-variable/montserrat";
 @import "@fontsource-variable/cairo";
+@import "@fontsource/dancing-script";
 
 
 @keyframes gradientMove {
@@ -61,11 +62,11 @@ body{
 
 
 
-
+/* 
 .anim {
   background: linear-gradient(to right, #b8860b, #f4a300, #fdd017, #FAFA33, #ffd966, #ffb347, #b8860b);
   background-size: 200% auto;
-}
+} */
 
 
 @keyframes gradient {
@@ -76,4 +77,9 @@ body{
 
 .animate-gradient {
   animation: gradient 8s ease infinite;
+}
+
+
+.dance {
+  font-family: "Dancing Script";
 }

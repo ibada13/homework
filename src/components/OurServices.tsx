@@ -1,66 +1,67 @@
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-
-import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
-import LanguageIcon from "@mui/icons-material/Language";
-import CampaignIcon from "@mui/icons-material/Campaign";
-import BrushIcon from "@mui/icons-material/Brush";
-import EventIcon from "@mui/icons-material/Event";
-
-import type { ReactElement } from "react";
 type serviceType = {
-  label: string, 
-  icon:ReactElement<any ,any>,
-  color:"primary" | "secondary" | "success" | "warning" | "error" | "inherit" | "grey" | "info"| undefined ,
-}
+  number: string;
+  label: string;
+  description: string;
+};
+
 export default function OurServices() {
-  const services :serviceType[]= [
-    { label: "Business Development", icon: <BusinessCenterIcon fontSize="large" />, color: "primary" },
-    { label: "Website Creation", icon: <LanguageIcon fontSize="large" />, color: "secondary" },
-    { label: "Marketing", icon: <CampaignIcon fontSize="large" />, color: "success" },
-    { label: "Creative & Production", icon: <BrushIcon fontSize="large" />, color: "warning" },
-    { label: "Event Management", icon: <EventIcon fontSize="large" />, color: "error" },
+  const services: serviceType[] = [
+    { number: "01", label: "Business Development", description: "Helping you expand with smart strategies." },
+    { number: "02", label: "Website Creation", description: "Modern and responsive websites tailored for you." },
+    { number: "03", label: "Marketing", description: "Boosting brand awareness and customer reach." },
+    { number: "04", label: "Creative & Production", description: "Designs and media that stand out." },
+    { number: "05", label: "Event Management", description: "Seamless planning and execution of events." },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-bg via-black to-bg w-full flex flex-col justify-between md:flex-row items-center px-12 py-22 gap-12 ">
-     
-      <div  className="flex flex-col gap-6 max-w-lg flex-1">
-                <p className="text-secondary text-lg md:text-xl opacity-80 text-left">
-          Crafting Prestige at Every Level.
-        </p>
-        <h2 className="text-6xl md:text-7xl font-extrabold text-sfg tracking-tight text-left">
-          Our Services
-        </h2>
-        <p className="text-gray-400 text-lg md:text-xl opacity-80 text-left">
+    <div className="min-h-screen bg-gradient-to-br from-bg via-black to-bg w-full flex flex-col justify-between md:flex-row items-center px-12 py-22 gap-12">
+      
+      {/* Left Side */}
+<div className="flex flex-col gap-6 max-w-lg flex-1 self-start space-y-12">
+  {/* First group */}
+  <div className="flex flex-col gap-12">
+    <p className="text-secondary text-lg md:text-xl opacity-80 text-left">
+      Crafting Prestige at Every Level
+    </p>
+    <p className="p-1 dance text-5xl bg-gradient-to-r from-ssfg via-sfg to-sfg bg-clip-text text-transparent">
+      For those who demand more:
+    </p>
+  </div>
 
-At AUREL, we craft tailored marketing, branding, web, and event experiences that reflect your vision and drive impact.
-        </p>
-    </div>
-  
+  {/* Second group */}
+  <div className="flex flex-col gap-12">
+    <h2 className="text-6xl md:text-7xl font-extrabold text-sfg tracking-tight text-left">
+      Our Services
+    </h2>
+    <p className="text-gray-400 text-lg md:text-xl opacity-80 text-left">
+      At AUREL, we craft tailored marketing, branding, web, and event experiences that reflect your vision and drive impact.
+    </p>
+  </div>
+</div>
+
 
       {/* Right Side */}
       <div className="flex-1 text-white">
-        <Timeline position="alternate">
-          {services.map((service, index) => (
-            <TimelineItem key={index}>
-              <TimelineSeparator>
-                {index !== 0 && <TimelineConnector />}
-                <TimelineDot color={service.color}>
-                  {service.icon}
-                </TimelineDot>
-                {index !== services.length - 1 && <TimelineConnector />}
-              </TimelineSeparator>
-              <TimelineContent className="flex items-center">
-                <h6 className="font-semibold">{service.label}</h6>
-              </TimelineContent>
-            </TimelineItem>
+        <div className="grid gap-10 sm:grid-cols-1 lg:grid-cols-2">
+          {services.map((service) => (
+            <div
+              key={service.number}
+              className="relative rounded-2xl p-6 bg-gradient-to-br from-gray-900/80 to-gray-800/40 border border-transparent 
+                         bg-clip-padding hover:border-gradient-to-r hover:from-purple-500 hover:to-black
+                         transition duration-300 transform hover:-translate-y-2 hover:scale-105"
+            >
+              <div className="flex items-center space-x-4 mb-4">
+                <span className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-bg to-black text-white font-bold text-xl">
+                  {service.number}
+                </span>
+                <h3 className="text-xl font-semibold">{service.label}</h3>
+              </div>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {service.description}
+              </p>
+            </div>
           ))}
-        </Timeline>
+        </div>
       </div>
     </div>
   );
