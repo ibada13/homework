@@ -59,8 +59,21 @@ body{
 } 
 
 
+
+
+
 .anim {
-  transition-property: all;
-  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1 );
-  transition-duration:400ms;
+  background: linear-gradient(to right, #b8860b, #f4a300, #fdd017, #FAFA33, #ffd966, #ffb347, #b8860b);
+  background-size: 200% auto;
+}
+
+
+@keyframes gradient {
+  0% { background-position: 0% 0; }
+  50% { background-position: 100% 0; }
+  100% { background-position: 0% 0; }
+}
+
+.animate-gradient {
+  animation: gradient 8s ease infinite;
 }

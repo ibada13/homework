@@ -93,26 +93,30 @@ const SecondSection = () => {
   );
 
   return (
-    <div className="mt-20 w-[80%] text-center ">
+    <div className="mt-10  text-center ">
       
       
 <p
-  className="text-2xl md:text-7xl font-extrabold bg-clip-text text-transparent 
-    bg-[linear-gradient(to_right,#b8860b,#f4a300,#fdd017,#FAFA33,#ffd966,#ffb347,#b8860b)] 
-    bg-[length:200%_auto]"
-  style={{ animation: "gradientMove 8s linear infinite" }}
+  className="
+    text-4xl md:text-7xl font-extrabold
+    bg-clip-text text-transparent
+    bg-[length:200%_auto]
+    bg-[linear-gradient(to_right,#a87a26,#fcefb3,#ac8332,#be9049,#b38d43,#efda99)]
+    animate-gradient
+  "
 >
   Prestiege In Every Detail
 </p>
 
 
 
-      <p className="text-secondary mt-4 max-w-xl mx-auto  z-10 font-bold">
-        We combine strategy, design, and technology to create experiences that
-        move people and grow brands.
+      <p className="text-secondary mt-4 max-w-2xl mx-auto  z-10 font-bold">
+       Prestige Marketing & Signature Brand Launches 
+Designed for Visionary Brands. 
+							
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12  z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 mx-12  z-10">
         {stats.map((stat, i ) => (
           <div
             key={i}

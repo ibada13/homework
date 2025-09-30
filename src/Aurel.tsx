@@ -1,5 +1,5 @@
 import NavBar from "./components/NavBar";
-import './main.css'
+
 import Main from "./components/Main";
 import WhoAreWe from "./components/WhoAreWe";
 import OurServices from "./components/OurServices";
@@ -18,7 +18,7 @@ export default function Aurel() {
 
     return (
 
-        <div className="min-h-screen w-screen flex flex-col justify-center items-center bg-bg px-1">
+        <div className="min-h-screen w-screen flex flex-col justify-center  bg-white px-1">
 
             <NavBar />
             <main className="">

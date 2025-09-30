@@ -27,7 +27,6 @@ export default function NavBar() {
         <img loading="lazy" src={logo} alt="Logo" className="w-16 h-16" />
       </NavLink>
 
-      {/* Hamburger button only on small screens */}
       <button
         className="md:hidden flex flex-col gap-1.5"
         onClick={() => setIsOpen(!isOpen)}
