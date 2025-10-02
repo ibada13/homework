@@ -21,12 +21,12 @@ export default function OurServices() {
           <p className="text-secondary text-lg md:text-xl opacity-80 text-center">
             Crafting Prestige at Every Level
           </p>
-          <p className="p-1 dance text-7xl 
+          <p className="p-1 dance text-7xl  opacity-50
     bg-clip-text text-transparent
     bg-[length:200%_auto]
     bg-[linear-gradient(to_right,#a87a26,#fcefb3,#ac8332,#be9049,#b38d43,#efda99)]
     animate-gradient">
-            Because limits don’t exist:
+            Because limits don’t exist
           </p>
         </div>
 

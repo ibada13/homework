@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export default function ButtonNaving({ content , subcontent , className }: {content:string , subcontent:string , className?:string}) { 
+export default function ButtonNaving({ content , subcontent , className }: {content:string , subcontent?:string , className?:string}) { 
     return (
               <NavLink
         to="/book-now"

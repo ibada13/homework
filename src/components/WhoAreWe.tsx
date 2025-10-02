@@ -2,7 +2,9 @@ import { useRef } from "react";
 import { PiSparkleFill } from "react-icons/pi";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {useGSAP} from '@gsap/react';
+import { useGSAP } from '@gsap/react';
+import bg from './WHOAREWE.jpg';
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function WhoAreWe() {
@@ -27,16 +29,15 @@ export default function WhoAreWe() {
       ease: "power2.out",
       scrollTrigger: {
         trigger: headingRef.current,
-        
         start: "top 80%",
         end: "150% 80%",
         toggleActions: "play reverse play reverse",
         // markers: true,
       }
     });
-    pointRefs.current.forEach((el:HTMLHeadingElement , i:number) => { 
-      gsap.fromTo(el, {
 
+    pointRefs.current.forEach((el: HTMLHeadingElement, i: number) => {
+      gsap.fromTo(el, {
         y: 50,
         rotation: i % 2 === 0 ? -3 : 3,
         opacity: 0,
@@ -44,41 +45,41 @@ export default function WhoAreWe() {
         // delay: i * 0.1,
       }, {
         rotation: 0,
-        opacity:1 ,
+        opacity: 1,
         ease: "power3.out",
         scrollTrigger: {
           trigger: el,
           start: "top 90%",
-          end:"-30% 30%",
+          end: "-30% 30%",
           // toggleActions: "play reverse play reverse",
-          // markers: true, 
-          scrub: true ,
+          // markers: true,
+          scrub: true,
         },
-      } )
+      })
     })
+
     gsap.fromTo("#sparkle", {
-      opacity: 0.5, 
-      scale: 1 ,
+      opacity: 0.5,
+      scale: 1,
     }, {
-      opacity: 2, 
-      duration: 1.5, 
-      yoyo:true , 
-      scale: 1.2, 
+      opacity: 2,
+      duration: 1.5,
+      yoyo: true,
+      scale: 1.2,
       repeat: -1,
-      ease:"power3.inOut"
-    } )
-
-
-
-  }
-  
-  );
+      ease: "power3.inOut"
+    })
+  });
 
   return (
-    <section className="bg-gradient-to-bl from-bg via-black to-bg flex flex-col md:flex-row justify-between items-center min-h-screen w-full py-22 px-12 md:px-24 gap-12">
-      
-      <div ref={headingRef} className="flex flex-col gap-6 max-w-lg flex-1">
-                <p className="text-gray-400 text-lg md:text-xl opacity-80 text-left">
+    <section
+      className="relative flex flex-col md:flex-row justify-between items-center min-h-screen w-full py-22 px-12 md:px-24 gap-12 bg-cover bg-center"
+      style={{ backgroundImage: `url(${bg})` }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-tr from-bg/80 via-black/55 to-bg/80" />
+
+      <div ref={headingRef} className="relative flex flex-col gap-6 max-w-lg flex-1">
+        <p className="text-gray-400 text-lg md:text-xl opacity-80 text-left">
           We Don’t Just Create We Elevate.
         </p>
         <h2 className="text-6xl md:text-7xl font-extrabold text-sfg tracking-tight text-left">
@@ -89,7 +90,7 @@ export default function WhoAreWe() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-6 w-full max-w-lg flex-1">
+      <div className="relative flex flex-col gap-6 w-full max-w-lg flex-1">
         {points.map((point, i) => (
           <div
             key={i}

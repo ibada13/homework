@@ -12,7 +12,7 @@ export default function NavBar() {
     { name: "Our Experts", to: "/experts" },
     { name: "Our Solutions", to: "/solutions" },
     { name: "Blog", to: "/blog" },
-    { name: "Get In Touch", to: "/contact" },
+    // { name: "Get In Touch", to: "/contact" },
   ];
 
   const linkClass = (isActive: boolean) =>
@@ -49,7 +49,7 @@ export default function NavBar() {
         ></span>
       </button>
 
-      {/* Links for large screens */}
+      
       <ul className="hidden md:flex space-x-6 lg:space-x-10 items-center">
         {navLinks.map((link, index) => (
           <li key={index}>
@@ -64,10 +64,10 @@ export default function NavBar() {
             </NavLink>
           </li>
         ))}
-        <li>
-          <ButtonNaving content="BOOK NOW" subcontent="FREE Consultation" />
-        </li>
       </ul>
+        
+      <ButtonNaving className="hidden md:block" content="Get In Touch" />
+      
 
       {/* Hamburger menu links for small screens */}
       {isOpen && (
@@ -87,7 +87,7 @@ export default function NavBar() {
             </li>
           ))}
           <li className="px-6">
-            <ButtonNaving content="BOOK NOW" subcontent="FREE Consultation" />
+            <ButtonNaving content="Get In Touch" />
           </li>
         </ul>
       )}
