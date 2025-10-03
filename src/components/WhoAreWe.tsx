@@ -25,14 +25,15 @@ export default function WhoAreWe() {
     }, {
       x: 0,
       opacity: 1,
-      duration: 3,
+  
       ease: "power2.out",
       scrollTrigger: {
-        trigger: headingRef.current,
-        start: "top 80%",
-        end: "150% 80%",
-        toggleActions: "play reverse play reverse",
-        // markers: true,
+        trigger: "#whoSec",
+        start: "top top",
+        end: "center 80%",
+        scrub:1.5 ,
+        // toggleActions: "play reverse play reverse",
+        markers: true,
       }
     });
 
@@ -74,15 +75,16 @@ export default function WhoAreWe() {
   return (
     <section
       className="relative flex flex-col md:flex-row justify-between items-center min-h-screen w-full py-22 px-12 md:px-24 gap-12 bg-cover bg-center"
+      id="whoSec"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="absolute inset-0 bg-gradient-to-tr from-bg/80 via-black/55 to-bg/80" />
 
       <div ref={headingRef} className="relative flex flex-col gap-6 max-w-lg flex-1">
-        <p className="text-gray-400 text-lg md:text-xl opacity-80 text-left">
+        <p className="text-gray-400 text-lg md:text-xl opacity-80 text-center md:text-left">
           We Don’t Just Create We Elevate.
         </p>
-        <h2 className="text-6xl md:text-7xl font-extrabold text-sfg tracking-tight text-left">
+        <h2 className="text-6xl md:text-7xl font-extrabold text-sfg tracking-tight text-center md:text-left">
           Who Are We?
         </h2>
         <p className="text-white text-lg md:text-xl opacity-80 text-left">
