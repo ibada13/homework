@@ -2,7 +2,7 @@
 @import "@fontsource-variable/montserrat";
 @import "@fontsource-variable/cairo";
 @import "@fontsource/dancing-script";
-
+@import "@fontsource/comic-neue";
 
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
@@ -82,4 +82,9 @@ body{
 
 .dance {
   font-family: "Dancing Script";
+}
+
+.comic{
+  font-family: "Comic Neue" ,cursive;
+
 }

@@ -3,7 +3,7 @@ import {  useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import logo from './word.png'
+import logo from './assets/word.png'
 gsap.registerPlugin(ScrollTrigger);
 
 

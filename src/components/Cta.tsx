@@ -70,7 +70,7 @@ setForm({ name: "", email: "", phone: "", date: "", message: "" });
 localStorage.removeItem("ctaForm");
 }
   return (
-    <section className="min-h-[80vh] bg-gradient-to-bl from-bg from-20% via-black to-bg w-full flex flex-col items-center justify-around p-6">
+    <section className="min-h-[80vh] bg-gradient-to-br from-bg from-20% via-black to-bg w-full flex flex-col items-center justify-around p-6">
       <div className="max-w-xl w-full bg-white/5 backdrop-blur-md rounded-2xl p-8 shadow-lg">
         <p className="text-sfg uppercase font-semibold text-4xl text-center">Claim Your Free Session</p>
         <p className="text-gray-400 text-center mt-8">

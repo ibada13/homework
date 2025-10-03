@@ -3,7 +3,7 @@ import { PiSparkleFill } from "react-icons/pi";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
-import bg from './WHOAREWE.jpg';
+import bg from './assets/WHOAREWE.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,7 +33,7 @@ export default function WhoAreWe() {
         end: "center 80%",
         scrub:1.5 ,
         // toggleActions: "play reverse play reverse",
-        markers: true,
+        // markers: true,
       }
     });
 

@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-br from-bg via-black to-bg text-white py-16 px-6 lg:px-20 gap-y-5">
+    <footer className="w-full bg-gradient-to-bl from-bg via-black to-bg text-white py-16 px-6 lg:px-20 gap-y-5">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
 
         

@@ -20,6 +20,9 @@ importers:
       '@fontsource-variable/montserrat':
         specifier: ^5.2.8
         version: 5.2.8
+      '@fontsource/comic-neue':
+        specifier: ^5.2.7
+        version: 5.2.7
       '@fontsource/dancing-script':
         specifier: ^5.2.8
         version: 5.2.8
@@ -448,6 +451,9 @@ packages:
 
   '@fontsource-variable/montserrat@5.2.8':
     resolution: {integrity: sha512-d8wykq7GCKhEOlLwEuQIOK3w3qsXNxwDlH0meru4AZZzQ4/+rZyvHWKL6BBtHdmbovSHEEQDkwkD8qYUKlcFtQ==}
+
+  '@fontsource/comic-neue@5.2.7':
+    resolution: {integrity: sha512-tNi0Nxbz0QMwHvZWJSP5G0SXq8CeX5b+K3l3q/afPmJ/WlQ+i3/NfOYWBzsojCZko1lNplfmjbsOGMuBs4WmcA==}
 
   '@fontsource/dancing-script@5.2.8':
     resolution: {integrity: sha512-zHVVgIQ5/rAIM0VVp1QMsqvJm9INHO5/C82E9rHT6NlabjaPTFYn8wl9lT4vPWizfB0TublGQM1999kfdA+XFA==}
@@ -2186,6 +2192,8 @@ snapshots:
   '@fontsource-variable/cairo@5.2.7': {}
 
   '@fontsource-variable/montserrat@5.2.8': {}
+
+  '@fontsource/comic-neue@5.2.7': {}
 
   '@fontsource/dancing-script@5.2.8': {}
 

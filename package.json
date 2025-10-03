@@ -17,6 +17,7 @@
     "@emotion/styled": "^11.14.1",
     "@fontsource-variable/cairo": "^5.2.7",
     "@fontsource-variable/montserrat": "^5.2.8",
+    "@fontsource/comic-neue": "^5.2.7",
     "@fontsource/dancing-script": "^5.2.8",
     "@gsap/react": "^2.1.2",
     "@mui/icons-material": "^7.3.2",
