@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function ButtonNaving({ content , subcontent , className }: {content:string , subcontent?:string , className?:string}) { 
     return (
               <NavLink
-        to="/book-now"
+        to="/cta"
         className={ `uppercase bg-sfg hover:bg-sfg/80 
           px-5 py-2 rounded-xl font-bold 
           text-white text-sm lg:text-base 

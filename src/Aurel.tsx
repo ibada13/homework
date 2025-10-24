@@ -1,37 +1,32 @@
-import NavBar from "./components/NavBar";
-
-import Main from "./components/Main";
-import WhoAreWe from "./components/WhoAreWe";
-import OurServices from "./components/OurServices";
-import Cta from "./components/Cta";
-import Footer from "./components/Footer";
-import OurExperts from "./components/OurExperts";
 import { useEffect } from "react";
-
-
+import { Routes, Route, NavLink ,useLocation} from "react-router-dom";
+import NavBar from "./pages/components/NavBar";
+import LandningPage from "./pages/LandingPage";
+import Footer from "./pages/components/Footer";
+import { FaPhone } from "react-icons/fa";
+import Cta from "./pages/components/Cta";
 
 export default function Aurel() { 
-    useEffect(() => { 
-        document.title = "AUREL";
-    },[])
-
-
-
-    return (
-
-        <div className="min-h-screen w-screen flex flex-col justify-center  bg-white px-1">
-
-            <NavBar />
-            <main className="">
-
-                <Main />
-                <WhoAreWe />
-                <OurServices />
-                <OurExperts />
-                <Cta/>
-            </main>
-                <Footer/>
-        </div>
-    )
-        ;
+  const location = useLocation();
+  useEffect(() => { 
+    document.title = "AUREL";
+  }, []);
+  useEffect(() => { 
+    window.scrollTo(0, 0);
+  },[location])
+  return (
+    <div className="scroll-smooth min-h-screen w-screen flex flex-col justify-center bg-white px-1">
+      <NavBar />
+      <NavLink to={'/cta'} className="fixed right-10 bottom-10 bg-sfg shadow-2xl rounded-full p-3 z-50 hover:bg-bg hover:text-secondary hover:scale-105 transition-all duration-300">
+        <FaPhone size={35}/>
+      </NavLink>
+      <main className="flex-grow scroll-smooth">
+        <Routes>
+          <Route path="/" element={<LandningPage />} />
+          <Route path="/cta" element={<Cta />} />
+        </Routes>
+          </main>
+          <Footer />
+    </div>
+  );
 }

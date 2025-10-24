@@ -51,6 +51,7 @@
 body{
   font-family: 'Montserrat',sans-serif;
   /* font-family: 'Cairo',sans-serif; */
+  cursor: url('/cursor.png' )  ,auto !important;
 }
 [dir="rtl"] #logo{
   font-family: "Aref Ruqaa";

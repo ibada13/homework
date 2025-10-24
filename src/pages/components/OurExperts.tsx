@@ -39,8 +39,8 @@ const people: People[] = [
   }, []);
 
   return (
-    <section className="min-h-screen w-full bg-gradient-to-bl from-bg via-black to-bg flex flex-col items-center py-32 space-y-15 px-6">
-      <p className="text-8xl text-sfg font-semibold uppercase  ">Our Experts</p>
+    <section className="min-h-screen w-full bg-gradient-to-br from-bg via-black to-bg flex flex-col items-center py-32 space-y-15 px-6">
+      <p className="text-center sm:text-left text-5xl sm:text-8xl text-sfg font-semibold uppercase  ">Our Experts</p>
         <p className="text-secondary text-xl font-semibold text-left md:text-center w-full ">The elite team redefining what’s possible</p>
       <div className="h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full ">
         {people.map((ppl, idx) => (

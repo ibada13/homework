@@ -23,7 +23,7 @@ export default function NavBar() {
   return (
     <nav className="fixed top-[5.5%] left-1/2 -translate-x-1/2 w-5/6 md:w-19/20 bg-bg/70 backdrop-blur-xl border border-white/10 flex justify-between items-center px-6 py-3 text-secondary rounded-2xl shadow-lg shadow-black/20 z-50">
       {/* Logo */}
-      <NavLink to="/aurel">
+      <NavLink to="/">
         <img loading="lazy" src={logo} alt="Logo" className="w-16 h-16" />
       </NavLink>
 
