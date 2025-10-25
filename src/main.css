@@ -4,6 +4,11 @@
 @import "@fontsource/dancing-script";
 @import "@fontsource/comic-neue";
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -36,6 +41,12 @@
   --border: oklch(0.78 0.005 270);
   --highlight: oklch(0.93 0.03 253.21);
 }
+
+::selection {
+  background: var(--ssfg); /* highlight color */
+  color: var(--bg); /* text color */
+}
+
 
 /* [data-theme='dark'] {
   --bg: #070606;
