@@ -12,7 +12,7 @@ export default function NavBar() {
   const navigate = useNavigate();
   const location = useLocation();
   const homePage = "/";
-
+  // the navbar links
   const navLinks = [
     { name: "Who Are We", to: "#whosec" },
     { name: "Services", to: "#services" },
@@ -20,15 +20,17 @@ export default function NavBar() {
     { name: "Experts", to: "#experts" },
     { name: "How It Works", to: "/howitworks" },
   ];
-
+  // we use this function to get the proprties of the slected link
   const linkClass = (to: string) => {
     if (to.startsWith("#") && selected === to) return "text-sfg uppercase font-semibold";
     if (!to.startsWith("#") && selected === to) return "text-sfg uppercase font-semibold";
     return "hover:text-sfg transition-all duration-200";
   };
-
+  // we use this function to scroll to a section
   const scrollToSection = (id: string) => {
+    // we check if the elemnt exist
     const el = document.querySelector(id);
+    //if it exist we scroll to it after 500ms to make sure that it exist in the page we are at 
     if (el) {
       isScrolling.current = true;
       el.scrollIntoView({ behavior: "smooth" });
@@ -54,7 +56,7 @@ export default function NavBar() {
     }
   };
 
-  // Scroll to target after navigation from another page
+  
   useEffect(() => {
     const target = (location.state as any)?.scrollTo || scrollTarget.current;
     if (target && location.pathname === homePage) {
