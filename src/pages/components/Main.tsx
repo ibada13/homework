@@ -1,8 +1,8 @@
-import {  useRef } from "react";
+
 // import { TypeAnimation } from "react-type-animation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+
 import logo from './assets/word.png'
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,56 +41,12 @@ const FirstSection = () => {
   )
 }
 
-interface Stat {
-  number: number;
-  label: string;
-}
+
 
 const SecondSection = () => {
-  const stats: Stat[] = [
-    { number: 10, label: "Years Experience" },
-    { number: 500, label: "Projects Delivered" },
-    { number: 200, label: "Happy Clients" },
-  ];
+
 
  
-  const statRefs = useRef<(HTMLHeadingElement | null)[]>([]);
-
-  useGSAP(() => {
-    statRefs.current.forEach((el, i) => {
-      if (!el) return;
-
-      gsap.fromTo(
-        el,
-        { innerText: 0 },
-        {
-          innerText: stats[i].number,
-          duration: 5,
-          snap: { innerText: 1 },
-          ease: "power1.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 80%",
-            end: "bottom 30%",
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-    });
-    
-  //   gsap.fromTo('#title', {
-  //   color: '#FAFA33',
-  // }, {
-  //     color: '#fdd017',
-  //     repeat: -1,
-  //     duration: 0.5, 
-  //     yoyo: true,
-  //   ease:'power2.inOut'
-  // })
-  
-  }
-
-  );
 
   return (
     <div className="mt-10  text-center ">
@@ -116,23 +72,7 @@ Designed for Visionary Brands.
 							
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 mx-12  z-10">
-        {stats.map((stat, i ) => (
-          <div
-            key={i}
-            className="p-6 rounded-2xl bg-secondary/50 border border-sfg shadow-xl flex flex-col items-center justify-center"
-          >
-            <h3
-              ref={(el) => void (statRefs.current[i] = el) }
-              className="text-4xl tracking-wider font-bold text-sfg"
-            >
-              0
-            <span>+</span>
-            </h3>
-            <p className="text-fg/80 font-bold">{stat.label}</p>
-          </div>
-        ))}
-      </div>
+
     </div>
   );
 };
@@ -140,7 +80,7 @@ Designed for Visionary Brands.
 
 const Main = () => {
   return (
-    <div className="w-full min-h-screen pb-10 pt-34  flex flex-col items-center justify-center bg-gradient-to-tr from-black via-bg to-sfg">
+    <div className="w-full min-h-screen pb-25 pt-34  flex flex-col items-center justify-center bg-gradient-to-tr from-black via-bg to-sfg">
       
       
 

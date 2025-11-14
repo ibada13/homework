@@ -33,7 +33,7 @@ html {
   --bg: oklch(0.2678 0.0971 325.23);
   --secondary: 		oklch(0.8952 0.0381 309.57);
   --fg: oklch(0.34 0.17 328.9);
-  --sfg :oklch(0.8714 0.1751 92.61) ;
+  --sfg :#fdd017 ;
   --ssfg:#FAFA33 ; 
   --accent: oklch(0.68 0.12 253.21);
   --accent-hover: oklch(0.62 0.14 253.21);

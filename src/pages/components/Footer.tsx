@@ -20,7 +20,7 @@ export default function Footer() {
         {/* Contact */}
         <div>
 
-          <p className="mb-2">Phone: <span className="text-sfg font-medium">+44 7575 893565</span></p>
+          <p className="mb-2">Phone: <span className="text-sfg font-medium">+44 7412 854730</span></p>
           <p className="mb-4">Address: <span className="text-sfg font-medium">167-169 Great Portland Street, 5th Floor, London, W1W 5PF</span></p>
           <div className="flex justify-center space-x-4 mt-2 ">
             <a href="#" className="bg-bg p-3 rounded-full hover:bg-cyan-500 duration-300 transition-colors">

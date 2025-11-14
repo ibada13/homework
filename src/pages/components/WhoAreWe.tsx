@@ -74,8 +74,9 @@ export default function WhoAreWe() {
 
   return (
     <section
+      
       className="relative flex flex-col md:flex-row justify-between items-center min-h-screen w-full py-22 px-12 md:px-24 gap-12 bg-cover bg-center"
-      id="whoSec"
+      id="whosec"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="absolute inset-0 bg-gradient-to-tr from-bg/80 via-black/55 to-bg/80" />
