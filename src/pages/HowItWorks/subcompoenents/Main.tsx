@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { gsap } from "gsap";
-import bg from "./assets/bg.jpg";
+import bg from "./assets/bg.webp";
 
 export default function Main() {
   useEffect(() => {
