@@ -28,9 +28,9 @@ export default function WhoAreWe() {
   
       ease: "power2.out",
       scrollTrigger: {
-        trigger: "#whoSec",
-        start: "top top",
-        end: "center 80%",
+        trigger: "#whosec",
+        start: "top center",
+        end: "center 50%",
         scrub:1.5 ,
         // toggleActions: "play reverse play reverse",
         // markers: true,

@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiDownload } from "react-icons/fi";
+import { FaEarthEurope } from "react-icons/fa6";
 import asset from './assets/pyramids.jpg'
-
-
+import { VscRobot } from "react-icons/vsc";
 type Solution = {
   title: string;
   description: string;
@@ -20,10 +20,10 @@ export default function OurSolutions() {
   const projects: Solution[] = [
     { title: "Portfolio Website", description: "A personal portfolio website showcasing projects and skills.", color: "#4CAF50", preview_link: "https://myportfolio.com", asset: asset },
     { title: "E-commerce App", description: "A full-stack e-commerce application with cart and payment integration.", color: "#FF5722", preview_link: "https://shoponline.com", asset: asset },
-    { title: "Task Manager", description: "A productivity app for managing daily tasks with reminders and deadlines.", color: "#2196F3", preview_link: "https://taskmanager.com", asset: asset },
-    // { title: "Brand Animation", description: "A logo reveal animation for brand presentation and marketing.", color: "#FFD700", asset: "/homework/logoanim.webm", video: true },
-    // { title: "Your Telegram Ai Assistant", description: "A logo reveal animation for brand presentation and marketing.", color: "#FFD700", asset: "/homework/TelegramAssistant.webm", video: true , preview:<RiRobotFill size={120} color="#08c"/> },
-    // { title: "AI Web Researcher For Sales", description: "A logo reveal animation for brand presentation and marketing.", color: "#FFD700", asset: "/homework/aisales.webm", video: true , preview:<FaEarthEurope size={90} color="#0f0"/> },
+    // { title: "Task Manager", description: "A productivity app for managing daily tasks with reminders and deadlines.", color: "#2196F3", preview_link: "https://taskmanager.com", asset: asset },
+    { title: "Brand Animation", description: "A logo reveal animation for brand presentation and marketing.", color: "#FFD700", asset: "/homework/logoanim.webm", video: true },
+    { title: "Your Telegram Ai Assistant", description: "A logo reveal animation for brand presentation and marketing.", color: "#FFD700", asset: "/homework/TelegramAssistant.webm", video: true , preview:<VscRobot size={90} color="#08c"/> },
+    { title: "AI Web Researcher For Sales", description: "A logo reveal animation for brand presentation and marketing.", color: "#FFD700", asset: "/homework/aisales.webm", video: true , preview:<FaEarthEurope size={90} color="#0f0"/> },
     { title: "Weather Dashboard", description: "A web app displaying live weather data and forecasts using APIs.", color: "#03A9F4", preview_link: "https://weatherapp.com", asset: asset },
   ];
 
@@ -48,6 +48,7 @@ export default function OurSolutions() {
               src={project.asset}
               controls
               loop
+              preload="none"
               className="w-full md:w-3/5 h-64 md:h-80 object-cover rounded-2xl shadow-xl"
             />
           ) : (
