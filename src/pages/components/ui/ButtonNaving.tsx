@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
 
-export default function ButtonNaving({ content , subcontent , className }: {content:string , subcontent?:string , className?:string}) { 
+export default function ButtonNaving({ content , subcontent , className , onClick  }: {content:string , subcontent?:string , className?:string ,onClick?:()=>void}) { 
     return (
-              <NavLink
+      <NavLink
+        onClick={()=>onClick?.()}
         to="/cta"
         className={ `uppercase bg-sfg hover:bg-sfg/80 
           px-5 py-2 rounded-xl font-bold 

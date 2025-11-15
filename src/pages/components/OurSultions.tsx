@@ -34,7 +34,7 @@ export default function OurSolutions() {
       id="solutions"
       className="min-h-screen w-full bg-gradient-to-bl from-bg via-black to-bg px-6 py-12 flex flex-col space-y-20">
       <div className="flex flex-col items-center gap-y-14">
-        <p className="text-sfg text-8xl text-left w-full md:text-8xl font-bold md:text-center">Our Solutions</p>
+        <p className="text-sfg text-6xl text-center w-full md:text-8xl font-bold md:text-center">Our Solutions</p>
         <a download href="/homework/AUREL CATALOGUE EUROPE.pdf" className="bg-sfg text-black px-6 py-3 rounded-xl hover:bg-black hover:text-sfg transition-all duration-300 border border-transparent hover:border-sfg flex space-x-2 items-center">
          <p> Download Our Catalog</p> <FiDownload className="inline" size={25}/>
         </a>

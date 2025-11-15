@@ -144,7 +144,7 @@ export default function NavBar() {
             </li>
           ))}
           <li className="px-6">
-            <ButtonNaving content="Get In Touch" />
+            <ButtonNaving onClick={()=>setIsOpen(false)} content="Get In Touch" />
           </li>
         </ul>
       )}
