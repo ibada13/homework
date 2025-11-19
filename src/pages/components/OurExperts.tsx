@@ -1,8 +1,12 @@
 import {  useRef } from "react";
 import { gsap } from "gsap";
-import pfp from "./assets/pfp.jpg";
+// import pfp from "./assets/pfp.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import uche from './assets/uche.png'
+import etienne from './assets/etienne.png';
+import oceane from './assets/Oceane.png';
+import abdrahim from './assets/Raheem.png';
 gsap.registerPlugin(ScrollTrigger);
 interface People {
   name: string;
@@ -12,10 +16,10 @@ interface People {
 
 export default function OurExperts() {
 const people: People[] = [
-  { name: "Rodion Raskolnikov", job: "Teacher", imageUrl: pfp },                
-  { name: "Jay Gatsby", job: "Entrepreneur", imageUrl: pfp },               
-  { name: "Captain Ahab", job: "Leader", imageUrl: pfp },    
-  { name: "Sherlock Holmes", job: "Detective", imageUrl: pfp },     
+  { name: "Uchechukwu Cynthi", job: "Opearations Manager", imageUrl: uche },                
+  { name: "etienne freydrich", job: "Sales Representative", imageUrl: etienne },               
+  { name:"Raheem Alikhil ", job: "Adminstrative Manager", imageUrl: abdrahim},    
+  { name: "Océane Savoy", job: "Head of Sales and Commercial", imageUrl: oceane },     
 ];
 
 
@@ -55,7 +59,7 @@ className="flex flex-col items-center justify-end relative h-80 rounded-lg  bg-b
 
           >
             <div
-              className="absolute inset-0 z-0 rounded-lg"
+              className="absolute inset-0 z-0 rounded-lg bg-secondary"
               style={{
                 backgroundImage: `url(${ppl.imageUrl})`,
                 backgroundSize: "cover",
@@ -64,8 +68,8 @@ className="flex flex-col items-center justify-end relative h-80 rounded-lg  bg-b
             />
             <div className="absolute inset-0 bg-black/20 z-10 hover:bg-black/50  transition-all duration-300" />
             <div className="relative z-10 text-center md:text-left  w-full text-bg p-4 comic ">
-              <p className="text-xl font-extrabold">{ppl.name}</p>
-              <p className="text-lg font-light text-black">{ppl.job}</p>
+              <p className="text-xl font-extrabold text-sfg">{ppl.name}</p>
+              <p className="text-lg font-light text-white">{ppl.job}</p>
             </div>
           </div>
         ))}

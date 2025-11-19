@@ -11,6 +11,7 @@ export default function OurServices() {
     { number: "03", label: "Marketing", description: "Boosting brand awareness and customer reach." },
     { number: "04", label: "Creative & Production", description: "Designs and media that stand out." },
     { number: "05", label: "Event Management", description: "Seamless planning and execution of events." },
+    { number: "06", label: "AI Solutions", description: "Intelligent, Scalable, and Customizable AI for Your Business." },
   ];
 
   return (
